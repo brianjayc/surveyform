@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description" class="description"><em>Thank you for taking time to help us improve the platform</em></p>
+    <form action="" id="survey-form">
+        <label id="name-label">
+            Name 
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label id="email-label">
+            Email 
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label">
+            Age (Optional) 
+            <input type="number" id="number" min="18" placeholder="Age" max="60">
+        </label>
+        <label>
+            Which option best describes your current role
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Fulltime Job">Fulltime Job</option>
+                <option value="Fulltime Learner">Fulltime Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </label>
+        <label>
+            Would you recommed freeCodeCamp to a friend?
+            <label class="option">
+                <input class="inline" type="radio" name="will-recommend" value="Yes" checked>
+                Yes
+            </label>
+            <label class="option">
+                <input class="inline" type="radio" name="will-recommend" value="No">
+                No
+            </label>
+        </label>
+        <label>
+            What is your favorite feature of freeCodeCamp?
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Student">Challenges</option>
+                <option value="Fulltime Job">Projects</option>
+                <option value="Fulltime Learner">Community</option>
+                <option value="Prefer not to say">Open Source</option>
+            </select>
+        </label>
+        <label>
+            What would you like to see improved? (Check all that apply)
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Front End Projects">
+                Front End Projects
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Back End Projects">
+                Back End Projects
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Data Visualization">
+                Data Visualization
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Challenges">
+                Challenges
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Open Source Community">
+                Open Source Community
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Gitter help rooms">
+                Gitter help rooms
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Videos">
+                Videos
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="City Meetups">
+                City Meetups
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Wiki">
+                Wiki
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Forum">
+                Forum
+            </label>
+            <label class="option">
+                <input class="inline" type="checkbox" name="for-improvement" value="Additional Courses">
+                Additional Courses
+            </label>
+        </label>
+        <label>
+            Any comments or suggestions?
+            <textarea class="comments" id="comments-suggestions" rows="5"></textarea>
+        </label>
+        <input class="submit-button" type="submit" id="submit">
+    </form>
+</body>
+</html>
